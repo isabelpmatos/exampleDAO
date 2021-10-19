@@ -15,7 +15,7 @@ public class ImplementaDAOEstudante implements DAOEstudante {
 	@Override
 	public void deleteEstudante(Estudante estudante) {
 		estudantes.remove(estudante.getNumLista());
-		System.out.println("Estudante: Item " + estudante.getNumLista() + " da lista, excluído da base de dados");
+		System.out.println("\nEstudante: Item " + estudante.getNumLista() + " da lista, excluído da base de dados");
 	}
 
 	//pega lista da base de dados
@@ -32,7 +32,7 @@ public class ImplementaDAOEstudante implements DAOEstudante {
 	@Override
 	public void updateEstudante(Estudante estudante) {
 		estudantes.get(estudante.getNumLista()).setNome(estudante.getNome());
-		System.out.println("Estudante: Item " + estudante.getNumLista() + " da lista, atualizado na base de dados");
+		System.out.println("\nEstudante: Item " + estudante.getNumLista() + " da lista, atualizado na base de dados");
 	}
 
 	@Override

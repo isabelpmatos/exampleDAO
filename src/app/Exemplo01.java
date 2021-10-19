@@ -24,6 +24,9 @@ public class Exemplo01 {
 		estudante.setNome("Matheus");
 		daoEstudante.updateEstudante(estudante);
 		
+		//remove estudante
+		daoEstudante.deleteEstudante(daoEstudante.getAllEstudantes().get(3));
+		
 		System.out.println("\nDepois da alteração:\n");
 
 		//imprime estudantes
